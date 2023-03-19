@@ -1,0 +1,25 @@
+a, .nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: peru;
+}
+
+.nav-link:hover {
+    color: peru;
+}
+
+.navbar {
+    background-color: bisque;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: medium;
+    font-weight: 300;
+}

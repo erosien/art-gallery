@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css">
+<title>My Art Gallery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar py-1 fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Art Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="https://www.artic.edu/" class="nav-item nav-link">Art Institue of Chicago</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="text-center">
+        <div class="container p-5">
+            <div class="row">
+                <div class="d-md-flex align-items-center justify-content-evenly">
+                    <h1 class="col text-center p-5">Paintings</h1>
+                </div>
+                <div class="d-md-flex">
+                    <h2 class="description">A collection of my favorite paintings currently shown at the Art Insitute of Chicago.
+                        Click on each photo to learn more about each work of art and the artist who created it.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center">
+        <div class="container">
+            <div class="gallery">
+                <div class="row">
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img1" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/child-and-seeing-hands.jpg" alt="117348" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp1"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img2" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/fedja-and-pjetuschkoff.jpg" alt="128431" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img3" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/figure-with-meat.jpg" alt="4884" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp3"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img4" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/juan-soriano-de-lacandon.jpg" alt="118661" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp4"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img5" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/maharana-bhim-singh-in-procession.jpg" alt="49195" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp5"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-xs-12 col-md-6 col-lg-6">
+                        <div class="image" id="img6" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                            <img src="static/two-sisters-on-the-terrace.jpg" alt="14655" class="img-fluid">
+                            <div class="caption">
+                                <p id="popUp6"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onClick="window.location.reload();">Refresh</button>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
